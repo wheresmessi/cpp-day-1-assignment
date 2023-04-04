@@ -1,0 +1,52 @@
+1. Identify the error in the following program.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i = 0;
+    i = i + 1;
+    cout << i;
+    return 0;
+}
+
+
+2Identify the  error in the following program-*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    short i = 2500, j = 3000;
+    cout << "i+j " << i + j;
+    return 0;
+}
+
+3 What will happen if we run this program?
+There are several errors in the given program:
+
+The header file should be included as #include <iostream> instead of #Include<iostream.h>.
+
+The main function should have a return type of int instead of void.
+
+The variable f is declared as an int, but is initialized with a floating-point value 1.0, which may lead to a loss of precision.
+
+The variable modResult is initialized with an incorrect expression i%jj, which should be i % j.
+
+The variable inadResult and divresult are not used in the program and can be removed.
+
+The variable modresult should be written with uppercase M as modResult.
+
+4 Find errors., if any in the following C++ statements
+a.cout << "x=" << x;
+
+b.m = 5; // n = 10; // s = m;
+
+c. cin >> x >> y;
+
+d. cout<<“\nName”<<name;
+
+e. cout<<”enter the value”;
+   cin>>x;
+
+f.  /* addition */ z=x+y;
