@@ -1,0 +1,142 @@
+1.  What will happen when you execute the following cvde?
+#inlcude<iostream.h>
+void main()
+int i =0;
+i =400*400/400
+cout<<I;
+
+output: 400.
+
+
+2. Identify the error in the following program_
+Include<iostrearn..h>
+void main()
+ {
+Int num[] ={1,2,3,4,5,6,7};
+nurn [1]	=[1] num ?cout<<”success” : cout<<"Errior";
+
+ans
+#include <iostream>
+
+int main() {
+    int num[] = {1, 2, 3, 4, 5, 6, 7};
+    num[1] = 1 ? std::cout << "success" : std::cout << "error";
+    return 0;
+}
+
+
+3. identify the error in the following program. 
+#include<iostream.h>
+void main() I
+ switch(1)
+{
+defaul tt
+case 4: 
+case 5:
+break.; 
+case 1
+continue;
+case 2; case 3; break;
+i--;
+}
+}
+
+ans
+
+#include <iostream>
+
+int main() {
+    switch (1) {
+        default:
+            break;
+        case 4:
+        case 5:
+            break;
+        case 1:
+            continue;
+        case 2:
+        case 3:
+            break;
+    }
+    
+}
+
+
+4. Identify the error in the following program.
+#include<iostream.h>
+#define pi 3.14
+ int squareArea(int &);
+int circlearea(int &) ; 
+voi d main()
+{
+int a=10;
+cout<< squareArea(A);
+cout<< circleArea(a) ;
+cout<<a<< endl ;
+}
+int squareArea(int &a)
+{
+return a *== a;
+}
+int circleArea(int &r)
+{
+return r = pi*r*r;
+)
+
+ans:
+#include <iostream>
+#define pi 3.14
+
+int squareArea(int&);
+float circleArea(int&);
+
+int main()
+{
+    int a = 10;
+    std::cout << squareArea(a) << std::endl;
+    std::cout << circleArea(a) << std::endl;
+    std::cout << a << std::endl;
+    return 0;
+}
+
+int squareArea(int& a)
+{
+    return a * a;
+}
+
+float circleArea(int& r)
+{
+
+5.  Find errors, if any, in the following c++ statements.
+(a) long Boat x.;
+(b) char *cp = vp;	
+(c)	int  code=three;	 
+(d)	int *p=new;	
+(e)	int const *p=total
+(g)	coast int  array_size;
+(h)         int & nurnber = 100;
+(i) float p=2345;
+(j) int else=234;
+(k) char a=’welcome’;
+
+ANS
+
+a) There should be no space between "Boat" and "x", and the dot (".") should be removed. It should be: long int x;
+
+(b) The pointer "vp" is not declared or initialized. It should be: char *cp = nullptr; or char *cp = some_valid_address; where "some_valid_address" is a valid address in memory.
+
+(c) "three" is not a valid integer value. It should be replaced with a valid integer value.
+
+(d) "new" is not used correctly. It should be followed by the type of object to be created using dynamic memory allocation, like "new int" or "new float[]".
+
+(e) The variable name "p" is already used for a pointer. It should have a different name, like "q". Also, since the pointer is pointing to a constant integer, the correct syntax would be: const int *q = &total; or int const *q = &total;.
+
+(g) There is a typo in "coast", which should be "const". Also, the variable "array_size" is not initialized. It should be initialized to a valid integer value, like: const int array_size = 10;.
+
+(h) A reference variable cannot be initialized with a constant value. It should be initialized with a variable, like: int number = 100; int &reference = number;.
+
+(i) The variable "p" is declared as a float, but is initialized with an integer value. It should be: float p = 2345.0;.
+
+(j) "else" is a reserved keyword in C++ and cannot be used as a variable name. It should be renamed to something else.
+
+(k) The variable "a" is declared as a char, but is initialized with a string value. It should be a character, like: char a = 'w';.
