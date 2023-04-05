@@ -1,2 +1,2 @@
-# cpp-day-1-assignment
+# cpp-assignment
 192224198
