@@ -1,0 +1,73 @@
+1)
+
+The program is missing a space between "int" and "main" in the function declaration. It should be:
+#include<iostream>
+int main()
+{
+    cout<< "\"geeksforgeeks\"";
+    return 0;
+}
+
+2)
+The output of the program will be "x is equal to y". The expression !(x ^ y) is equivalent to (x == y), so the if statement will evaluate to true because x and y have the same value.
+
+3}
+The program will output the numbers from 1 to 10 repeatedly until the call stack overflows, because the condition in the if statement is always true. The static variable x is initialized to 1 and incremented with each recursive call to main(). The expression (cout<< x << " "&& x++ < N &&main()) will print the value of x, increment it, and then call main() again if x is less than N. The expression always returns true because the output stream object cout evaluates to true.
+
+4}
+The variable y is assigned the value "seventy", which is not a valid integer literal. This will cause a compilation error. If we fix the typo and assign y the value 70, then the program will swap the values of x and y using a temporary variable:
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int x = 10;
+    int y = 70;
+
+    int temp = x;
+    x = y;
+    y = temp;
+
+    cout<< "X : "<< x << "\n";
+    cout<< "Y : "<< y << "\n";
+
+    return 0;
+}
+
+
+The output will be:
+
+X : 70
+Y : 10
+
+
+5}
+Yes, we can use the header file bits/stdc++.h in C++ if our compiler supports it. It includes all standard C++ headers and some non-standard ones, and can simplify our code by reducing the number of header files we need to include. The program computes the maximum and minimum of two integers a and b using the formula (a+b+abs(a-b))/2 and (a+b-abs(a-b))/2, respectively:
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int a = 15, b = 20;
+    printf("max = %d\n", ((a + b) + abs(a - b)) / 2);
+    printf("min = %d", ((a + b) - abs(a - b)) / 2);
+    return 0;
+}
+The output will be:
+
+max = 20
+min = 15
+
+6}
+The output of the program will be 10, which is the sum of a and b. The expression -( -a-b ) is equivalent to a + b because the double negative cancels out.
+
+7}
+The output of the program will be "SIMATS". The expression !(cout<< "SIMATS") will print "SIMATS" to the output stream cout and return false, so the if statement will execute the else block and print nothing.
+
+8}
+The output of the program will be 1. The variable n is initialized to 4 and then right-shifted by 2 bits, which is equivalent to integer division by 2^2 = 4. Therefore, n becomes 1.
+
+
+
