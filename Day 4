@@ -1,0 +1,56 @@
+1)
+
+Error: This program has a syntax error because the "cout" statement is not properly qualified with its namespace.
+Corrected program:
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "\"geeksforgeeks\"";
+  return 0;
+}
+2)
+Output: "x is equal to y" will be printed on the console.
+
+3)
+Output: This program will print numbers from 1 to 10 on the console.
+
+4)
+Error: This program has a syntax error because "seventy" is not a valid integer.
+
+Corrected program:
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 10;
+  int y = 70;
+
+  x = x + y;
+  y = x - y;
+  x = x - y;
+
+  cout << "X : " << x << "\n";
+  cout << "Y : " << y << "\n";
+
+  return 0;
+}
+
+5)
+Yes, we can use this header file in C++.
+
+Output: The program will print "10" on the console.
+
+6)
+Output: The program will print "SIMATS" on the console.
+
+7)
+Output: The program will print "1" on the console.
+
+8)
+Output: The program will print "1" on the console.
+
+9)
+Output: The program will print "1" on the console.
